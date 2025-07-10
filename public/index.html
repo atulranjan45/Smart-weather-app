@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌦️ Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 Live Weather Report</h1>
+    <form action="/weather" method="POST" class="form" autocomplete="off">
+  <div class="input-wrapper">
+    <input type="text" id="cityInput" name="city" placeholder="Enter city name..." required />
+    <div id="suggestions"></div>
+  </div>
+  <button type="submit">Check Weather</button>
+</form>
+
+  </div>
+  <script>
+    const cityInput = document.getElementById('cityInput');
+    const suggestionsBox = document.getElementById('suggestions');
+
+    cityInput.addEventListener('input', async () => {
+      const query = cityInput.value.trim();
+      if (!query) {
+        suggestionsBox.innerHTML = '';
+        return;
+      }
+
+      const response = await fetch(`/autocomplete?q=${query}`);
+      const cities = await response.json();
+
+      suggestionsBox.innerHTML = cities.map(c => `
+        <div class="suggestion-item" onclick="selectCity('${c.name}, ${c.country}')">
+          ${c.name}, ${c.country}
+        </div>
+      `).join('');
+    });
+
+    function selectCity(city) {
+      cityInput.value = city;
+      suggestionsBox.innerHTML = '';
+    }
+  </script>
+</body>
+</html>
