@@ -44,13 +44,13 @@ http://localhost:3000
 
 
 📁 Project Structure
-smart-weather-app/
+'''smart-weather-app/
 │
 ├── public/           # Static files (HTML, CSS)
 ├── app.js            # Express backend
 ├── .env              # API key (not pushed to GitHub)
 ├── .gitignore        # To ignore .env and node_modules
-└── README.md         # Project description
+└── README.md         # Project description'''
 
 
 📌 To Do
