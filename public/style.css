@@ -1,0 +1,126 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 250px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #2f80ed;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eee;
+}
+body.clear {
+  background: linear-gradient(to right, #fceabb, #f8b500); /* sunny */
+}
+
+body.rain {
+  background: linear-gradient(to right, #667db6, #485563); /* rainy */
+}
+
+body.clouds {
+  background: linear-gradient(to right, #bdc3c7, #2c3e50); /* cloudy */
+}
+
+body.snow {
+  background: linear-gradient(to right, #e6dada, #274046); /* snowy */
+}
+
+body.default {
+  background: linear-gradient(to right, #56ccf2, #2f80ed); /* fallback */
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+#suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.suggestion-item {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+body.clear {
+  background-image: url('https://source.unsplash.com/1600x900/?sunny');
+  background-size: cover;
+  background-position: center;
+}
+
+body.rain {
+  background-image: url('https://source.unsplash.com/1600x900/?rain');
+  background-size: cover;
+  background-position: center;
+}
+
+body.clouds {
+  background-image: url('https://source.unsplash.com/1600x900/?cloudy');
+  background-size: cover;
+  background-position: center;
+}
+
+body.snow {
+  background-image: url('https://source.unsplash.com/1600x900/?snow');
+  background-size: cover;
+  background-position: center;
+}
+
+body.fog {
+  background-image: url('https://source.unsplash.com/1600x900/?fog');
+  background-size: cover;
+  background-position: center;
+}
+
+body.default {
+  background: linear-gradient(to right, #56ccf2, #2f80ed);
+}
