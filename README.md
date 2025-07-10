@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+![GitHub repo size](https://img.shields.io/github/repo-size/atulranjan45/smart-weather-app)
+![GitHub stars](https://img.shields.io/github/stars/atulranjan45/smart-weather-app?style=social)
+![Last Commit](https://img.shields.io/github/last-commit/atulranjan45/smart-weather-app)
+
+>>>>>>> 379e19a374fdfd9905d12f9e23fb6ea5c12d8cc2
 # 🌦️ Smart Weather App
 
 A smart weather web application built using **Node.js**, **Express**, and the **OpenWeatherMap API**. It provides real-time weather data along with mood-based advice and health tips — going beyond what Google Weather provides.
